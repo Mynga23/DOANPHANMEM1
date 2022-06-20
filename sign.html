@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/8c4b870cf3.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="sign.css">
+</head>
+
+<body>
+  <div id="container-fluid">
+    <div id="header">
+      <div class="logo">
+        <img src="https://staticfile.batdongsan.com.vn/images/logo/h-logo.svg">
+      </div>
+      <div class="menu">
+        <ul class="head">
+          <li><a href="indext.html">Trang chủ</a></li>
+          <li>
+            <a class="">Nhà đất bán</a>
+          </li>
+          <li> <a href="product_nhan.html">Nhà đất cho thuê</a></li>
+          <li> <a href="product_vongco.html">Tin tức</a></li>
+
+          <li><a href="call.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="congcu">
+        <ul class="head">
+          <li>
+            <a href="" data-toggle="modal" data-target="#modalLoginForm"><i class="far fa-user"></i></a>
+          </li>
+
+          <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <!-- Pills navs -->
+                <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link btn-block active" id="tab-login" data-mdb-toggle="pill" href="#pills-login"
+                      role="tab" aria-controls="pills-login" aria-selected="true" style="width:100%">Login</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#pills-register" role="tab"
+                      aria-controls="pills-register" aria-selected="false" style="width:100%">Register</a>
+                  </li>
+                </ul>
+                <!-- Pills navs -->
+
+                <!-- Pills content -->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                    <form>
+                      <div class="text-center mb-3">
+                        <p>Sign in with:</p>
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                          <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                          <i class="fab fa-google"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                          <i class="fab fa-twitter"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                          <i class="fab fa-github"></i>
+                        </button>
+                      </div>
+
+                      <p class="text-center">or:</p>
+
+                      <!-- Email input -->
+                      <div class="w-75 m-auto">
+                        <div class="form-outline mb-4">
+                          <input type="email" id="loginName" class="form-control" />
+                          <label class="form-label" for="loginName">Email or username</label>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="loginPassword" class="form-control" />
+                          <label class="form-label" for="loginPassword">Password</label>
+                        </div>
+                      </div>
+
+                      <!-- 2 column grid layout -->
+                      <div class="row mb-4">
+                        <div class="col-md-6 d-flex justify-content-center">
+                          <!-- Checkbox -->
+                          <div class="form-check mb-3 mb-md-0">
+                            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                            <label class="form-check-label" for="loginCheck"> Remember me </label>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 d-flex justify-content-center">
+                          <!-- Simple link -->
+                          <a href="#!">Forgot password?</a>
+                        </div>
+                      </div>
+
+                      <!-- Submit button -->
+                      <button type="submit" class="btn btn-primary  mb-4" style="display:block;margin:auto; ">Sign
+                        in</button>
+
+                      <!-- Register buttons -->
+                      <div class="text-center">
+                        <p>Not a member? <a href="#!">Register</a></p>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                    <form>
+                      <div class="text-center mb-3">
+                        <p>Sign up with:</p>
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                          <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                          <i class="fab fa-google"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                          <i class="fab fa-twitter"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-primary btn-floating mx-1">
+                          <i class="fab fa-github"></i>
+                        </button>
+                      </div>
+
+                      <p class="text-center">or:</p>
+
+                      <!-- Name input -->
+                      <div class="w-75 m-auto">
+                        <div class="form-outline mb-4">
+                          <input type="text" id="registerName" class="form-control" />
+                          <label class="form-label" for="registerName">Name</label>
+                        </div>
+
+                        <!-- Username input -->
+                        <div class="form-outline mb-4">
+                          <input type="text" id="registerUsername" class="form-control" />
+                          <label class="form-label" for="registerUsername">Username</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="registerEmail" class="form-control" />
+                          <label class="form-label" for="registerEmail">Email</label>
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="registerPassword" class="form-control" />
+                          <label class="form-label" for="registerPassword">Password</label>
+                        </div>
+
+                        <!-- Repeat Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="registerRepeatPassword" class="form-control" />
+                          <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+                        </div>
+                      </div>
+
+                      <!-- Checkbox -->
+                      <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                          aria-describedby="registerCheckHelpText" />
+                        <label class="form-check-label" for="registerCheck">
+                          I have read and agree to the terms
+                        </label>
+                      </div>
+
+                      <!-- Submit button -->
+                      <button type="submit" class="btn btn-primary  mb-3" style="display:block;margin:auto; ">Sign
+                        in</button>
+                    </form>
+                  </div>
+                </div>
+                <!-- Pills content -->
+              </div>
+            </div>
+          </div>
+          <li>
+            <a href="product_vongco.html" class="Buttondangtin">Đăng tin </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+   
+    <footer class="main-footer">
+      <div class="container">
+        <div class="">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-block">
+                <h4 class="footer-title">
+                  Giới thiệu
+                </h4>
+                <div class="footer-content">
+                  <p class="chu">Silver jewelry trang mua sắm trực tuyến của thương hiệu trang sức,
+                    phụ
+                    kiện nữ, giúp bạn
+                    tiếp
+                    cận xu hướng thời trang mới nhất.</p>
+                  <div class="social-list">
+
+                    <a class="lienket" href=""><i class="fab fa-facebook-square"></i></a>
+                    <a class="lienket" href=""><i class="fab fa-google"></i></a>
+                    <a class="lienket" href=""><i class="fab fa-twitter-square"></i></a>
+                    <a class="lienket" href=""><i class="fab fa-youtube-square"></i></a>
+                    <a class="lienket" href=""><i class="fab fa-skype"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="footer-col footer-link">
+                <h4 class="footer-title">
+                  PHÁP LÝ &amp; CÂU HỎI
+                </h4>
+                <div class="footer-content toggle-footer">
+                  <ul>
+                    <li class="item">
+                      <a href="#" title="Tìm kiếm">Tìm kiếm</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Giới thiệu">Giới thiệu</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Chính sách đổi trả">Chính sách đổi trả</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                    </li>
+                    <li class="item">
+                      <a href="#" title="Điều khoản dịch vụ">Điều khoản dịch vụ</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="">
+                <h4 class="footer-title">
+                  Thông tin liên hệ
+                </h4>
+                <div class="footer-contenttoggle-footer">
+                  <ul>
+                    <li class="ab"><span>Địa chỉ:</span> Some where on the </li>
+                    <li class="ab"><span>Điện thoại:</span> +84 (096)1458300</li>
+                    <li class="ab"><span>Fax:</span> +84 (096) 1458300</li>
+                    <li class="ab"><span>Mail:</span> vietanhgalileo@gmail.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="">
+                <h4 class="footer-title">
+                  FANPAGE
+                </h4>
+                <div class="footer-content">
+                  <div>
+                    <div>
+                      <a href="#">SOCIAL
+                        NETWORK</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="main-footer--copyright">
+    <div class="container">
+      <hr>
+      <div class="main-footer--border" style="text-align:center;padding-bottom: 15px;">
+        <p>Copyright © 2019 <a href="blog.html"> Runner Inn</a>. <a target="_blank" href="#">Powered by Dân Chơi Giới
+            Trẻ</a></p>
+      </div>
+    </div>
+  </div>
+  </footer>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
+</body>
+
+</html>

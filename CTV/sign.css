@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container-fluid{
+    width: 100%;
+    height: auto;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    margin-top: 5px;
+    padding-left: 6%;
+    height: 82%;
+}
+.congcu{
+    margin-right: 110px;
+}
+.box {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+ 
+input {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 0px;
+  transition: 0.8s ease;
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+}
+ 
+input::placeholder {
+  color: antiquewhite;
+}
+.box:hover input {
+  width: 200px;
+  margin: 0 20px;
+  border-bottom: 2px solid red;
+}
+ 
+input:focus {
+  width: 80px;
+  margin: 0 20px;
+  border-bottom: 2px solid red;
+}
+.logo img {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+ul li{
+    text-decoration: none;
+    display: inline-flex;
+    padding: 20px;
+}
+.menu li a:hover,
+.menu li a:active{
+    text-decoration: none;
+    border-bottom: 1px solid black;
+}
+
+li a .dropbtn {
+    display: inline-block;
+     color: Iwhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  li a:hover, .drop:hover .dropbtn {
+    background-color: Orgb(255, 8, 43);
+}
+  li .drop {
+    display: inline-block;}
+  .drop-list {
+    box-shadow: 0px 8px 16px 0px black;
+    margin-top: 30px;
+    display: none;
+    position: absolute;
+    background-color: F9F9f9;
+    min-width: 160px;
+    box-shadow: epx 8px 16px epx Orgba(8,8,0,e.2);
+    z-index: 1;
+}
+
+.drop-list a {
+     color: Oblack;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.drop-list a:hover {
+    text-decoration: none;
+      background-color: #f1f1f1;
+    }
+.drop:hover .drop-list {
+    display: block;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.containerForm p{
+  color: orangered;
+}
+.containerForm a{
+  color: orangered;
+}
+.containerForm a:hover{
+  color: red;
+  text-decoration: none;
+}
+.box {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+ 
+input {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 0px;
+  transition: 0.8s ease;
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+}
+ 
+input::placeholder {
+  color: antiquewhite;
+}
+.box:hover input {
+  width: 200px;
+  margin: 0 20px;
+  border-bottom: 2px solid red;
+}
+ 
+input:focus {
+  width: 80px;
+  margin: 0 20px;
+  border-bottom: 2px solid red;
+}
+ul li{
+  text-decoration: none;
+  display: inline-flex;
+  padding: 20px;
+}
+.menu li a:hover,
+.menu li a:active{
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+a{
+text-decoration: none;
+color: black;
+}
+.dropdown{
+  display: none;
+}
+li a .dropbtn {
+  display: inline-block;
+   color: Iwhite;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .drop:hover .dropbtn {
+  background-color: Orgb(255, 8, 43);
+}
+li .drop {
+  display: inline-block;
+}
+.drop-list {
+  box-shadow: 0px 8px 16px 0px black;
+  margin-top: 30px;
+  display: none;
+  position: absolute;
+  background-color: F9F9f9;
+  min-width: 160px;
+  box-shadow: epx 8px 16px epx Orgba(8,8,0,e.2);
+  z-index: 1;
+}
+.drop-list a {
+   color: Oblack;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.drop-list a:hover {
+  text-decoration: none;
+    background-color: #f1f1f1;
+  }
+.drop:hover .drop-list {
+  display: block;
+}
+
+  .info li{
+      text-decoration: none;
+      display: inline-flex;
+      padding: 5px;
+  }
+  .sci li{
+      text-decoration: none;
+      display: inline-flex;
+      padding: 5px;
+  }
+
+section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #112d42;
+}
+section::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:50%;
+  height: 100%;
+  background: #03a9f4;
+}
+section .container{
+  position: relative;
+  min-width: 1100px;
+  min-height: 550px;
+  display:flex;
+  z-index: 100;
+}
+section .container .containerinfo{
+  position: absolute;
+  top: 40px;
+  width: 350px;
+  height: calc(100% - 80px);
+  background: #0f3959;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
+section .container .containerinfo h2{
+  color: #fff;
+  font-size: 24px;
+  margin: 20px 0;
+}
+section .container .containerinfo li{
+  position: relative;
+  list-style: none;
+  display: flex;
+  margin: 20px 0;
+  cursor: pointer;
+  align-items: flex-start;
+}
+section .container .containerinfo li span{
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 300;
+  opacity: 0.5;
+  font-size: 20px;
+}
+/*Hiệu Ứng Hover Cho Thẻ Li*/
+section .container .containerinfo li:hover span{
+  opacity: 1;
+}
+section .container .containerinfo .sci{
+  position: relative;
+  display:flex;
+}
+section .container .containerinfo .sci li{
+  list-style: none;
+  margin-right: 15px;
+}
+section .container .containerinfo .sci li a{
+  text-decoration: none;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 32px;
+}
+/*Hiệu Ứng Hover Icon*/
+section .container .containerinfo .sci li:hover a{
+  opacity: 1;
+}
+
+
+/*mamoi*/
+section .container .containerForm{
+  position: absolute;
+  padding: 70px 50px;
+  background: #fff;
+  margin-left: 150px;
+  padding-left: 250px;
+  width: calc(100% - 150px);
+  height: 100%;
+  box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+}
+section .container .containerForm h2{
+  color: #0f3959;
+  font-size: 24px;
+  font-weight: 500;
+}
+section .container .containerForm .formBox{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+section .container .containerForm .formBox .inputBox{
+  position: relative;
+  margin: 0 0 35px 0;
+}
+section .container .containerForm .formBox .inputBox.w50{
+  width: 47%;
+}
+section .container .containerForm .formBox .inputBox.w100{
+  width: 100%;
+}
+section .container .containerForm .formBox .inputBox input,
+section .container .containerForm .formBox .inputBox textarea{
+   width: 100%;
+   padding: 5px 0;
+   resize: none;
+   font-size: 18px;
+   font-weight: 400;
+   color: #333;
+   border: none;
+   border-bottom: 1px solid #777;
+   outline: none;
+}
+section .container .containerForm .formBox .inputBox textarea{
+   min-height: 120px;
+}
+section .container .containerForm .formBox .inputBox button[type="submit"]{
+   position: relative;
+   cursor: pointer;
+   background: #0f3959;
+   color: #fff;
+   border: none;
+   max-width: 150px;
+   padding: 12px;
+}
+section .container .containerForm .formBox .inputBox button[type="submit"]:hover{
+   background:  #ff568c;
+}
+
+section .container .containerForm .formBox .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  transition: 0.5s;
+  pointer-events: none;
+}
+section .container .containerForm .formBox .inputBox input:focus ~ span,
+section .container .containerForm .formBox .inputBox textarea:focus ~ span,
+section .container .containerForm .formBox .inputBox input:valid ~ span,
+section .container .containerForm .formBox .inputBox textarea:valid ~ span{
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #ff568c
+}
+
+.index-card{
+  padding-left: 16px;
+  width: 100%;
+  height: 298px;
+  display: flex;
+  margin-top: 40px;
+}
+.main-footer{
+  margin-top: 30px;
+}
+.footer-contenttoggle-footer{
+  display: flex;
+}
+.ab{
+  margin-top: -21px;
+  height: 20px;
+}
+h2{
+  text-align: center;
+}
+.lienket{
+  padding-right: 10px;
+}
+.lienket i{
+  font-size: 30px;
+  margin-top: 90px;
+  padding: 3px
+}
+ul .item{
+  display: list-item;
+  
+}
+.item{
+  margin-top: -18px;
+  height: 20px;
+}
+ul li a{
+  color: black;
+}
